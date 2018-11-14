@@ -52,7 +52,7 @@ def write_into_xml(locations):
         location.appendChild(longtitude)
         longtitude.appendChild(doc.createTextNode(each[1]))
 
-    f = open("data/NYCDatabase.xml", "w")
+    f = open("webpage/src/NYCDatabase.xml", "w")
     f.write(doc.toprettyxml(indent="  "))
     f.close()
 

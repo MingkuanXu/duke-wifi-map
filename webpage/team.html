@@ -10,6 +10,14 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- For team container-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
   <style>
   body {
       font: 400 15px/1.8 Lato, sans-serif;
@@ -95,12 +103,6 @@
   .nav-tabs li a {
       color: #777;
   }
-  #googleMap {
-      width: 100%;
-      height: 400px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-  }
   .navbar {
       font-family: Montserrat, sans-serif;
       margin-bottom: 0;
@@ -169,7 +171,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">HOME</a></li>
         <li><a href="map.html">MAP</a></li>
-        <li><a href="team.html">TEAM</a></li>
+        <li><a href="hotspots.html">NYC HOTSPOTS</a></li>
+        <li><a href="#">TEAM</a></li>
         <li><a href="speedtest/index.html">SPEED TEST</a></li>
         <!--<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
       </ul>
@@ -177,67 +180,38 @@
   </div>
 </nav>
 
-<!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h3>Team Members</h3>
-  <!-- <p><em>HackDuke 2018</em></p>  -->
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet the team - our office rats:</p>
 
-      <a href="#demo" data-toggle="collapse">
-        <img src="src/members/Mingkuan.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <p class="text-center"><strong>Mingkuan Xu</strong></p>
-        <p>Duke University</p>
-    </div>
-    <div class="col-sm-4">
+<div class="w3-row"><br>
 
-      <a href="#demo2" data-toggle="collapse">
-        <img src="src/members/Ryan.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <p class="text-center"><strong>Ryan Piersma</strong></p>
-        <p>Duke University</p>
-        <p>    </p>
-        <p>    </p>
+<div class="w3-quarter">
+  <img src="src/members/Mingkuan.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Mingkuan</h3>
+  <p>Front-end Engineer</p>
+</div>
 
-    </div>
-    <div class="col-sm-4">
+<div class="w3-quarter">
+  <img src="src/members/Charles.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Charles Lyu</h3>
+  <p>Machine Learning Engineer</p>
+</div>
 
-      <a href="#demo3" data-toggle="collapse">
-        <img src="src/members/Malcolm.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-        <p class="text-center"><strong>Malcolm Speed</strong></p>
-        <p>NC State University</p>
-        <br>
-        <br>
+<div class="w3-quarter">
+  <img src="src/members/Yikai.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Yikai Wu</h3>
+  <p>Algorithm Design</p>
+</div>
 
-    </div>
+<div class="w3-quarter">
+  <img src="src/members/Yunhao.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Yunhao Qing</h3>
+  <p>Algorithm Desgin</p>
+</div>
 
-    <div>
-    </div>
-	<br>
-
-
-        <div class="col-sm-4">
-
-      <a href="#demo4" data-toggle="collapse">
-        <img src="src/members/Yuxuan.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <p class="text-center"><strong>Yuxuan Pan</strong></p>
-        <p>Duke University</p>
-
-    </div>
-
-        <div class="col-sm-4">
-
-        <img src="src/members/Alex.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
-      <p class="text-center"><strong>Alex Hoppe</strong></p>
-        <p>NC State University</p>
-
-    </div>
-
-  </div>
+</div>
 </div>
 
 
@@ -252,7 +226,9 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
+  <!--
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+  -->
 </footer>
 
 <script>
