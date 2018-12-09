@@ -287,7 +287,8 @@
             xmlhttp=new ActiveXObject("Microsoft.XMLHTTP")
           }
 
-          var filename = "src/NYCDatabase.xml";
+          // var filename = "src/20181118_135522.xml";
+          var filename = "src/20181118_175443.xml";
 
           xmlhttp.open("GET",filename,false);
           xmlhttp.send();
@@ -301,8 +302,8 @@
         var list = [];
         var x = readDatabase();
         for (i = 0; i <x.length; i++) {
-          list.push(new google.maps.LatLng(x[i].getElementsByTagName("latitude")[0].textContent,
-                                              x[i].getElementsByTagName("longtitude")[0].textContent));
+          list.push({location: new google.maps.LatLng(x[i].getElementsByTagName("latitude")[0].textContent,
+                                              x[i].getElementsByTagName("longtitude")[0].textContent), weight: x[i].getElementsByTagName("signal")[0].textContent});
         }
         return list;
         // return [
