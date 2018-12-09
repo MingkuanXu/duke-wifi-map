@@ -50,11 +50,11 @@ def write_into_xml(datas, fileName):
 
         latitude = doc.createElement("latitude")
         location.appendChild(latitude)
-        latitude.appendChild(doc.createTextNode(data[3]))
+        latitude.appendChild(doc.createTextNode(data[4]))
 
         longtitude = doc.createElement("longtitude")
         location.appendChild(longtitude)
-        longtitude.appendChild(doc.createTextNode(data[4]))
+        longtitude.appendChild(doc.createTextNode(data[3]))
 
     f = open(fileName, "w")
     f.write(doc.toprettyxml(indent="  "))
@@ -62,6 +62,5 @@ def write_into_xml(datas, fileName):
 
 if __name__ == '__main__':
     dataTime = "20181118_135522"
-
     datas = parse_csv("data/csv/"+ dataTime +".csv")
     write_into_xml(datas,"webpage/src/" + dataTime+".xml")
