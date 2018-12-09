@@ -18,8 +18,6 @@ def parse_csv(fileName):
         if (line != ''):
             myList = line.split('","')
             wifiName = myList[0][1:]
-            #wifiSignal = random.random() * 5
-            #wifiSignal = myList[3]
             signalStrength = float(myList[3])
             wifiSignal = dbm_to_measure(signalStrength)
             wifiTime = myList[-3]
