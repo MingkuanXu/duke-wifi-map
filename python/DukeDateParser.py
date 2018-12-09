@@ -10,7 +10,7 @@ def parse_csv(fileName):
         line = f.readline()
         if (line != ''):
             myList = line.split(',')
-            wifiName = myList[0][1:]
+            wifiName = myList[0][1:-1]
             wifiSignal = myList[3][1:-1]
             wifiTime = myList[-3][1:-1]
             wifiLongitude = myList[-2][1:-1]
