@@ -267,70 +267,69 @@
       }
 
       function changeRadius() {
-        heatmap.set('radius', heatmap.get('radius') ? null : 100);
+        heatmap.set('radius', heatmap.get('radius') ? null : 20);
       }
 
       function changeOpacity() {
         heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
       }
 
-
-
-      function readDatabase(){
-          // A function that read locations from the NYC xml database
-          if (window.XMLHttpRequest) {
-            // code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp=new XMLHttpRequest();
-          }
-          else {
-            // code for IE6, IE5
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP")
-          }
-
-          // var filename = "src/20181118_135522.xml";
-          var filename = "src/data.xml";
-
-          xmlhttp.open("GET",filename,false);
-          xmlhttp.send();
-          xmlDoc=xmlhttp.responseXML;
-          var x = xmlDoc.getElementsByTagName("location");
-          return x;
-      }
-
-      // Heatmap data: 500 Points
       function getPoints() {
         var list = [];
-        var x = readDatabase();
-        for (i = 0; i <x.length; i++) {
-          list.push({location: new google.maps.LatLng(x[i].getElementsByTagName("latitude")[0].textContent,
-                                              x[i].getElementsByTagName("longtitude")[0].textContent), weight: parseFloat(x[i].getElementsByTagName("signal")[0].textContent)});
+
+        // Range variables
+        var latitude_start = 35.995410;
+        var latitude_end = 36.007632;
+        var longtitude_start = -78.948664;
+        var longtitude_end = -78.929848;
+
+        // Iteration
+        var latitude,longtitude;
+
+        for (latitude = latitude_start; latitude< latitude_end; latitude+=0.00005){
+          for (longtitude = longtitude_start; longtitude<longtitude_end; longtitude+=0.00005){
+            var strength = getSignal(latitude,longtitude);
+            //list.push({location: new google.maps.LatLang(latitude,longtitude), weight: strength});
+
+            list.push({location: new google.maps.LatLng(latitude, longtitude), weight: strength});
+          }
         }
+
         return list;
-        // return [
-        //   new google.maps.LatLng(40.74596800000, -73.99403900000),
-        //   new google.maps.LatLng(40.74461400000, -73.98506900000),
-        //   new google.maps.LatLng(40.75766600000, -73.98587800000),
-        //   new google.maps.LatLng(40.75997100000, -73.98434200000),
-        //   new google.maps.LatLng(40.76041300000, -73.98454100000),
-        //   new google.maps.LatLng(40.76259300000, -73.98307700000),
-        //   new google.maps.LatLng(40.76088300000, -73.98427700000),
-        //   new google.maps.LatLng(40.76063200000, -73.98428300000),
-        //   new google.maps.LatLng(40.75233500000, -73.97973800000),
-        //   new google.maps.LatLng(40.75083300000, -73.97681700000),
-        //   new google.maps.LatLng(40.74983200000, -73.98156000000),
-        //   new google.maps.LatLng(40.74972800000, -73.99511000000),
-        //   new google.maps.LatLng(40.75864900000, -73.97514300000),
-        //   new google.maps.LatLng(40.76071800000, -73.98463400000),
-        //   new google.maps.LatLng(40.76246700000, -73.97235800000),
-        //   new google.maps.LatLng(40.76026600000, -73.98485700000),
-        //   new google.maps.LatLng(40.76023500000, -73.98401200000),
-        //   new google.maps.LatLng(40.76151100000, -73.97274500000)
-        // ];
+
+        /*
+        return [
+          new google.maps.LatLng(40.74596800000, -73.99403900000),
+          new google.maps.LatLng(40.74461400000, -73.98506900000),
+          new google.maps.LatLng(40.75766600000, -73.98587800000),
+          new google.maps.LatLng(40.75997100000, -73.98434200000),
+          new google.maps.LatLng(40.76041300000, -73.98454100000),
+          new google.maps.LatLng(40.76259300000, -73.98307700000),
+          new google.maps.LatLng(40.76088300000, -73.98427700000),
+          new google.maps.LatLng(40.76063200000, -73.98428300000),
+          new google.maps.LatLng(40.75233500000, -73.97973800000),
+          new google.maps.LatLng(40.75083300000, -73.97681700000),
+          new google.maps.LatLng(40.74983200000, -73.98156000000),
+          new google.maps.LatLng(40.74972800000, -73.99511000000),
+          new google.maps.LatLng(40.75864900000, -73.97514300000),
+          new google.maps.LatLng(40.76071800000, -73.98463400000),
+          new google.maps.LatLng(40.76246700000, -73.97235800000),
+          new google.maps.LatLng(40.76026600000, -73.98485700000),
+          new google.maps.LatLng(40.76023500000, -73.98401200000),
+          new google.maps.LatLng(40.76151100000, -73.97274500000)
+        ];*/
       }
     </script>
+
+
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBWF4M7m9-4lqCBvtrdq31-CfvN9eMYo&libraries=visualization&callback=initMap">
     </script>
+
+
+    <!-- Import functions from predictor.js-->
+    <script type="text/javascript" src="predictor.js"></script>
+
 
     <script>
     $(document).ready(function(){
