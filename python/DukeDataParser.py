@@ -65,6 +65,7 @@ def write_into_xml(datas, fileName):
     f.close()
 
 if __name__ == '__main__':
-    dataTime = "20181118_135522"
+    # dataTime = "20181118_135522"
+    dataTime = "20181118_175443"
     datas = parse_csv("data/csv/"+ dataTime +".csv")
     write_into_xml(datas,"webpage/src/" + dataTime+".xml")
