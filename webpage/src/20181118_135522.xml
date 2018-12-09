@@ -1,276 +1,87 @@
 <?xml version="1.0" ?>
 <hotspots>
   <location>
-    <name>dlink-DD04</name>
-    <signal>-73</signal>
-    <time>-73</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00209</longtitude>
-  </location>
-  <location>
-    <name>Linksys06275</name>
-    <signal>-63</signal>
-    <time>-63</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00219</longtitude>
-  </location>
-  <location>
-    <name>300 Swift Guest</name>
-    <signal>-88</signal>
-    <time>-88</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00184</longtitude>
-  </location>
-  <location>
-    <name>Linksys05653-guest</name>
-    <signal>-61</signal>
-    <time>-61</time>
-    <latitude>-78.92195</latitude>
-    <longtitude>36.00214</longtitude>
-  </location>
-  <location>
-    <name>ChezPoweNew</name>
-    <signal>-83</signal>
-    <time>-83</time>
-    <latitude>-78.92206</latitude>
-    <longtitude>36.00164</longtitude>
-  </location>
-  <location>
-    <name>DIRECT-roku-930</name>
-    <signal>Inc</signal>
-    <time>Inc</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00203</longtitude>
-  </location>
-  <location>
-    <name>MySpectrumWiFif8-2G</name>
-    <signal>-84</signal>
-    <time>-84</time>
-    <latitude>-78.92206</latitude>
-    <longtitude>36.00164</longtitude>
-  </location>
-  <location>
     <name>DukeOpen</name>
-    <signal>INC.</signal>
-    <time>INC.</time>
+    <signal>1.7104746421771833</signal>
+    <time>2018/11/18 13:51:15</time>
     <latitude>-78.92185</latitude>
     <longtitude>36.00226</longtitude>
   </location>
   <location>
-    <name>MySpectrumWiFia8-2G</name>
-    <signal>-64</signal>
-    <time>-64</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00209</longtitude>
-  </location>
-  <location>
-    <name>MySpectrumWiFi80-2G</name>
-    <signal>-48</signal>
-    <time>-48</time>
-    <latitude>-78.92225</latitude>
-    <longtitude>36.00142</longtitude>
-  </location>
-  <location>
-    <name>Velvet Lounge</name>
-    <signal>-57</signal>
-    <time>-57</time>
-    <latitude>-78.92206</latitude>
-    <longtitude>36.00164</longtitude>
-  </location>
-  <location>
-    <name>300 Swift Guest</name>
-    <signal>-92</signal>
-    <time>-92</time>
-    <latitude>-78.92185</latitude>
-    <longtitude>36.00226</longtitude>
-  </location>
-  <location>
-    <name>Dookblue</name>
-    <signal>-86</signal>
-    <time>-86</time>
+    <name>eduroam</name>
+    <signal>2.0940886225299353</signal>
+    <time>2018/11/18 13:51:18</time>
     <latitude>-78.92191</latitude>
     <longtitude>36.00226</longtitude>
   </location>
   <location>
-    <name>MySpectrumWiFi40-2G</name>
-    <signal>-84</signal>
-    <time>-84</time>
-    <latitude>-78.92206</latitude>
-    <longtitude>36.00164</longtitude>
-  </location>
-  <location>
     <name>eduroam</name>
-    <signal>-72</signal>
-    <time>-72</time>
-    <latitude>-78.92191</latitude>
-    <longtitude>36.00226</longtitude>
-  </location>
-  <location>
-    <name>MySpectrumWiFiC7-2G</name>
-    <signal>-64</signal>
-    <time>-64</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00203</longtitude>
-  </location>
-  <location>
-    <name>eduroam</name>
-    <signal>INC.</signal>
-    <time>INC.</time>
+    <signal>0.1685635419494086</signal>
+    <time>2018/11/18 13:52:16</time>
     <latitude>-78.92218</latitude>
     <longtitude>36.00151</longtitude>
   </location>
   <location>
     <name>DukeVisitor</name>
-    <signal>INC.</signal>
-    <time>INC.</time>
+    <signal>2.080263660267108</signal>
+    <time>2018/11/18 13:52:05</time>
     <latitude>-78.92208</latitude>
     <longtitude>36.00158</longtitude>
   </location>
   <location>
     <name>eduroam</name>
-    <signal>INC.</signal>
-    <time>INC.</time>
+    <signal>1.7938954731691443</signal>
+    <time>2018/11/18 13:51:23</time>
     <latitude>-78.92196</latitude>
     <longtitude>36.00219</longtitude>
   </location>
   <location>
     <name>DukeVisitor</name>
-    <signal>INC.</signal>
-    <time>INC.</time>
+    <signal>0.3102103415339119</signal>
+    <time>2018/11/18 13:51:23</time>
     <latitude>-78.92196</latitude>
     <longtitude>36.00219</longtitude>
   </location>
   <location>
-    <name>WIFILIT</name>
-    <signal>-92</signal>
-    <time>-92</time>
-    <latitude>-78.92195</latitude>
-    <longtitude>36.00214</longtitude>
-  </location>
-  <location>
-    <name></name>
-    <signal>INC.</signal>
-    <time>INC.</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00184</longtitude>
-  </location>
-  <location>
-    <name>MySpectrumWiFi08-2G</name>
-    <signal>-79</signal>
-    <time>-79</time>
-    <latitude>-78.92191</latitude>
-    <longtitude>36.00226</longtitude>
-  </location>
-  <location>
-    <name>MySpectrumWiFie0-2G</name>
-    <signal>-76</signal>
-    <time>-76</time>
-    <latitude>-78.92193</latitude>
-    <longtitude>36.00198</longtitude>
-  </location>
-  <location>
-    <name>MySpectrumWiFi52-2G</name>
-    <signal>-72</signal>
-    <time>-72</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00209</longtitude>
-  </location>
-  <location>
     <name>DukeVisitor</name>
-    <signal>-75</signal>
-    <time>-75</time>
-    <latitude>-78.92196</latitude>
-    <longtitude>36.00184</longtitude>
-  </location>
-  <location>
-    <name>Ligma</name>
-    <signal>-93</signal>
-    <time>-93</time>
-    <latitude>-78.92194</latitude>
-    <longtitude>36.00188</longtitude>
-  </location>
-  <location>
-    <name>NETGEAR54</name>
-    <signal>-91</signal>
-    <time>-91</time>
-    <latitude>-78.92194</latitude>
-    <longtitude>36.00188</longtitude>
-  </location>
-  <location>
-    <name></name>
-    <signal>-81</signal>
-    <time>-81</time>
+    <signal>0.27318638708532794</signal>
+    <time>2018/11/18 13:51:50</time>
     <latitude>-78.92196</latitude>
     <longtitude>36.00184</longtitude>
   </location>
   <location>
     <name>Dukeblue</name>
-    <signal>-88</signal>
-    <time>-88</time>
+    <signal>4.3433609303613725</signal>
+    <time>2018/11/18 13:51:50</time>
     <latitude>-78.92196</latitude>
     <longtitude>36.00184</longtitude>
   </location>
   <location>
     <name>Dukeblue</name>
-    <signal>-74</signal>
-    <time>-74</time>
+    <signal>0.2325671606259444</signal>
+    <time>2018/11/18 13:52:07</time>
     <latitude>-78.92212</latitude>
     <longtitude>36.00154</longtitude>
   </location>
   <location>
     <name>Dukeblue</name>
-    <signal>-82</signal>
-    <time>-82</time>
+    <signal>2.814713452285653</signal>
+    <time>2018/11/18 13:51:59</time>
     <latitude>-78.92204</latitude>
     <longtitude>36.00169</longtitude>
   </location>
   <location>
-    <name>home wireless</name>
-    <signal>-85</signal>
-    <time>-85</time>
-    <latitude>-78.92324</latitude>
-    <longtitude>36</longtitude>
-  </location>
-  <location>
-    <name>home wireless</name>
-    <signal>-80</signal>
-    <time>-80</time>
-    <latitude>-78.92324</latitude>
-    <longtitude>36</longtitude>
-  </location>
-  <location>
     <name>eduroam</name>
-    <signal>INC.</signal>
-    <time>INC.</time>
+    <signal>3.090183496994292</signal>
+    <time>2018/11/18 13:52:46</time>
     <latitude>-78.92243</latitude>
     <longtitude>36.00121</longtitude>
   </location>
   <location>
     <name>Dukeblue</name>
-    <signal>INC.</signal>
-    <time>INC.</time>
+    <signal>3.8905637510201094</signal>
+    <time>2018/11/18 13:52:46</time>
     <latitude>-78.92243</latitude>
     <longtitude>36.00121</longtitude>
-  </location>
-  <location>
-    <name>1002</name>
-    <signal>-89</signal>
-    <time>-89</time>
-    <latitude>-78.92324</latitude>
-    <longtitude>36</longtitude>
-  </location>
-  <location>
-    <name>1002-guest</name>
-    <signal>-89</signal>
-    <time>-89</time>
-    <latitude>-78.92324</latitude>
-    <longtitude>36</longtitude>
-  </location>
-  <location>
-    <name>1002-guest</name>
-    <signal>-89</signal>
-    <time>-89</time>
-    <latitude>-78.92324</latitude>
-    <longtitude>36</longtitude>
   </location>
 </hotspots>
