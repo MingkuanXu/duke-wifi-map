@@ -303,7 +303,7 @@
         var x = readDatabase();
         for (i = 0; i <x.length; i++) {
           list.push({location: new google.maps.LatLng(x[i].getElementsByTagName("latitude")[0].textContent,
-                                              x[i].getElementsByTagName("longtitude")[0].textContent), weight: x[i].getElementsByTagName("signal")[0].textContent});
+                                              x[i].getElementsByTagName("longtitude")[0].textContent), weight: parseFloat(x[i].getElementsByTagName("signal")[0].textContent)});
         }
         return list;
         // return [
