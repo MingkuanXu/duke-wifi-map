@@ -20,18 +20,13 @@ def parse_csv(fileName):
             if (wifiLongitude != '' and wifiLatitude != '' and
             (wifiName == 'DukeOpen' or wifiName == 'Dukeblue'
             or wifiName == 'DukeVisitor' or wifiName == 'eduroam')):
-                data = []
-                data.append(wifiName)
-                data.append(wifiSignal)
-                data.append(wifiTime)
-                data.append(wifiLongitude)
-                data.append(wifiLatitude)
+                data = [wifiName, wifiSignal, wifiTime, wifiLongitude, wifiLatitude]
                 datas.append(data)
         line = f.readline()
     f.close()
     return datas
 
-def write_into_xml(datas):
+def write_into_xml(datas, fileName):
 
     doc = Document()
     hotspots = doc.createElement("hotspots")
@@ -61,10 +56,12 @@ def write_into_xml(datas):
         location.appendChild(longtitude)
         longtitude.appendChild(doc.createTextNode(data[4]))
 
-    f = open("webpage/src/20181118_135522.xml", "w")
+    f = open(fileName, "w")
     f.write(doc.toprettyxml(indent="  "))
     f.close()
 
 if __name__ == '__main__':
-    datas = parse_csv("data/csv/20181118_135522.csv")
-    write_into_xml(datas)
+    dataTime = "20181118_135522"
+
+    datas = parse_csv("data/csv/"+ dataTime +".csv")
+    write_into_xml(datas,"webpage/src/" + dataTime+".xml")

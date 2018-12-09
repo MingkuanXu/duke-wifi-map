@@ -2,84 +2,84 @@
 <hotspots>
   <location>
     <name>DukeOpen</name>
-    <signal>1.7104746421771833</signal>
+    <signal>3.5506155016070435</signal>
     <time>2018/11/18 13:51:15</time>
     <latitude>-78.92185</latitude>
     <longtitude>36.00226</longtitude>
   </location>
   <location>
     <name>eduroam</name>
-    <signal>2.0940886225299353</signal>
+    <signal>4.6492443548565365</signal>
     <time>2018/11/18 13:51:18</time>
     <latitude>-78.92191</latitude>
     <longtitude>36.00226</longtitude>
   </location>
   <location>
     <name>eduroam</name>
-    <signal>0.1685635419494086</signal>
+    <signal>3.266705935236818</signal>
     <time>2018/11/18 13:52:16</time>
     <latitude>-78.92218</latitude>
     <longtitude>36.00151</longtitude>
   </location>
   <location>
     <name>DukeVisitor</name>
-    <signal>2.080263660267108</signal>
+    <signal>2.4160614445482578</signal>
     <time>2018/11/18 13:52:05</time>
     <latitude>-78.92208</latitude>
     <longtitude>36.00158</longtitude>
   </location>
   <location>
     <name>eduroam</name>
-    <signal>1.7938954731691443</signal>
+    <signal>1.273838783642391</signal>
     <time>2018/11/18 13:51:23</time>
     <latitude>-78.92196</latitude>
     <longtitude>36.00219</longtitude>
   </location>
   <location>
     <name>DukeVisitor</name>
-    <signal>0.3102103415339119</signal>
+    <signal>3.698045598800518</signal>
     <time>2018/11/18 13:51:23</time>
     <latitude>-78.92196</latitude>
     <longtitude>36.00219</longtitude>
   </location>
   <location>
     <name>DukeVisitor</name>
-    <signal>0.27318638708532794</signal>
+    <signal>2.3161480949480637</signal>
     <time>2018/11/18 13:51:50</time>
     <latitude>-78.92196</latitude>
     <longtitude>36.00184</longtitude>
   </location>
   <location>
     <name>Dukeblue</name>
-    <signal>4.3433609303613725</signal>
+    <signal>0.4119452734243584</signal>
     <time>2018/11/18 13:51:50</time>
     <latitude>-78.92196</latitude>
     <longtitude>36.00184</longtitude>
   </location>
   <location>
     <name>Dukeblue</name>
-    <signal>0.2325671606259444</signal>
+    <signal>3.583736732173342</signal>
     <time>2018/11/18 13:52:07</time>
     <latitude>-78.92212</latitude>
     <longtitude>36.00154</longtitude>
   </location>
   <location>
     <name>Dukeblue</name>
-    <signal>2.814713452285653</signal>
+    <signal>0.31673114039117545</signal>
     <time>2018/11/18 13:51:59</time>
     <latitude>-78.92204</latitude>
     <longtitude>36.00169</longtitude>
   </location>
   <location>
     <name>eduroam</name>
-    <signal>3.090183496994292</signal>
+    <signal>2.771881108670739</signal>
     <time>2018/11/18 13:52:46</time>
     <latitude>-78.92243</latitude>
     <longtitude>36.00121</longtitude>
   </location>
   <location>
     <name>Dukeblue</name>
-    <signal>3.8905637510201094</signal>
+    <signal>4.344664874114615</signal>
     <time>2018/11/18 13:52:46</time>
     <latitude>-78.92243</latitude>
     <longtitude>36.00121</longtitude>
