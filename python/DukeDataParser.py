@@ -1,6 +1,10 @@
 from xml.dom.minidom import Document
 import random
 
+def dbm_to_measure(dbm):
+    return max(0, 7 - 0.4383 * math.exp(-0.0278 * dbm))
+
+names_list = ['DukeOpen', 'Dukeblue', 'DukeVisitor', 'eduroam']
 
 def parse_csv(fileName):
     datas = []
@@ -12,14 +16,14 @@ def parse_csv(fileName):
         if (line != ''):
             myList = line.split('","')
             wifiName = myList[0][1:]
-            wifiSignal = random.random() * 5
+            #wifiSignal = random.random() * 5
             #wifiSignal = myList[3]
+            signalStrength = float(myList[3])
+            wifiSignal = max(0, 7 - 0.4383 * math.exp(-0.0278 * signalStrength))
             wifiTime = myList[-3]
             wifiLongitude = myList[-2]
             wifiLatitude = myList[-1][:-2]
-            if (wifiLongitude != '' and wifiLatitude != '' and
-            (wifiName == 'DukeOpen' or wifiName == 'Dukeblue'
-            or wifiName == 'DukeVisitor' or wifiName == 'eduroam')):
+            if (wifiLongitude != '' and wifiLatitude != '' and wifiName in names_list):
                 data = [wifiName, wifiSignal, wifiTime, wifiLongitude, wifiLatitude]
                 datas.append(data)
         line = f.readline()
