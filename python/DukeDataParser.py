@@ -19,7 +19,7 @@ def parse_csv(fileName):
             #wifiSignal = random.random() * 5
             #wifiSignal = myList[3]
             signalStrength = float(myList[3])
-            wifiSignal = max(0, 7 - 0.4383 * math.exp(-0.0278 * signalStrength))
+            wifiSignal = dbm_to_measure(signalStrength)
             wifiTime = myList[-3]
             wifiLongitude = myList[-2]
             wifiLatitude = myList[-1][:-2]
