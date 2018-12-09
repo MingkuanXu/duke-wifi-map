@@ -213,13 +213,13 @@
 
 
     <!-- Icons -->
-    <!--
+
     <div id="floating-panel">
       <button onclick="toggleHeatmap()">Toggle Heatmap</button>
       <button onclick="changeGradient()">Change gradient</button>
       <button onclick="changeRadius()">Change radius</button>
       <button onclick="changeOpacity()">Change opacity</button>
-    </div> -->
+    </div>
     <div id="map"></div>
     <script>
 
@@ -267,7 +267,7 @@
       }
 
       function changeRadius() {
-        heatmap.set('radius', heatmap.get('radius') ? null : 20);
+        heatmap.set('radius', heatmap.get('radius') ? null : 100);
       }
 
       function changeOpacity() {
@@ -288,7 +288,7 @@
           }
 
           // var filename = "src/20181118_135522.xml";
-          var filename = "src/20181118_175443.xml";
+          var filename = "src/data.xml";
 
           xmlhttp.open("GET",filename,false);
           xmlhttp.send();
