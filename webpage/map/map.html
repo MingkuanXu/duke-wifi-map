@@ -274,37 +274,23 @@
         heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
       }
 
-
-
-      function readDatabase(){
-          // A function that read locations from the NYC xml database
-          if (window.XMLHttpRequest) {
-            // code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp=new XMLHttpRequest();
-          }
-          else {
-            // code for IE6, IE5
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP")
-          }
-
-          // var filename = "src/20181118_135522.xml";
-          var filename = "src/data.xml";
-
-          xmlhttp.open("GET",filename,false);
-          xmlhttp.send();
-          xmlDoc=xmlhttp.responseXML;
-          var x = xmlDoc.getElementsByTagName("location");
-          return x;
-      }
-
-      // Heatmap data: 500 Points
       function getPoints() {
         var list = [];
-        var x = readDatabase();
-        for (i = 0; i <x.length; i++) {
-          list.push({location: new google.maps.LatLng(x[i].getElementsByTagName("latitude")[0].textContent,
-                                              x[i].getElementsByTagName("longtitude")[0].textContent), weight: parseFloat(x[i].getElementsByTagName("signal")[0].textContent)});
+
+        // Range variables
+        var latitude_start = 35.995410
+        var latitude_end = 36.007632
+        var longtitude_start = -78.929848
+        var longtitude_end = -78.948664
+
+        // Iteration
+        for (latitude = latitude_start; i<latitude_end; i+=0.0001){
+          for (longtitude = longtitude_start; i<longtitude_end; j+=0.0001){
+            var strength =
+            list.push({location: new google.maps.LatLang(latitude,longtitude), weight: strength})
+          }
         }
+
         return list;
         // return [
         //   new google.maps.LatLng(40.74596800000, -73.99403900000),
