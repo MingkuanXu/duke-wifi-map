@@ -287,7 +287,8 @@
           }
 
           // var filename = "src/20181118_135522.xml";
-          var filename = "src/data.xml";
+          //var filename = "src/data.xml";
+          var filename = "src/predictions.xml";
 
           xmlhttp.open("GET",filename,false);
           xmlhttp.send();
@@ -303,18 +304,18 @@
         // Range variables
         var latitude_start = 35.995410;
         var latitude_end = 36.007632;
-        var longtitude_start = -78.948664;
-        var longtitude_end = -78.929848;
+        var longitude_start = -78.948664;
+        var longitude_end = -78.929848;
 
         // Iteration
-        var latitude,longtitude;
+        var latitude,longitude;
 
         for (latitude = latitude_start; latitude< latitude_end; latitude+=0.00005){
-          for (longtitude = longtitude_start; longtitude<longtitude_end; longtitude+=0.00005){
-            var strength = getSignal(latitude,longtitude);
-            //list.push({location: new google.maps.LatLang(latitude,longtitude), weight: strength});
+          for (longitude = longitude_start; longitude<longitude_end; longitude+=0.00005){
+            var strength = getSignal(latitude,longitude);
+            //list.push({location: new google.maps.LatLang(latitude,longitude), weight: strength});
 
-            list.push({location: new google.maps.LatLng(latitude, longtitude), weight: strength});
+            list.push({location: new google.maps.LatLng(latitude, longitude), weight: strength});
           }
         }
         */
@@ -323,8 +324,8 @@
         for (i = 0; i <x.length; i++) {
           list.push({
             location: new google.maps.LatLng(x[i].getElementsByTagName("latitude")[0].textContent,
-                                             x[i].getElementsByTagName("longtitude")[0].textContent),
-            weight: parseFloat(x[i].getElementsByTagName("signal")[0].textContent)
+                                             x[i].getElementsByTagName("longitude")[0].textContent),
+            weight: parseFloat(x[i].getElementsByTagName("signal")[0].textContent)/15
           });
         }
 

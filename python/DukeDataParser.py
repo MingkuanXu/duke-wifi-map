@@ -58,9 +58,9 @@ def write_into_xml(path, fileName):
             location.appendChild(latitude)
             latitude.appendChild(doc.createTextNode(data[4]))
 
-            longtitude = doc.createElement("longtitude")
-            location.appendChild(longtitude)
-            longtitude.appendChild(doc.createTextNode(data[3]))
+            longitude = doc.createElement("longitude")
+            location.appendChild(longitude)
+            longitude.appendChild(doc.createTextNode(data[3]))
 
     f = open(fileName, "w")
     f.write(doc.toprettyxml(indent="  "))
