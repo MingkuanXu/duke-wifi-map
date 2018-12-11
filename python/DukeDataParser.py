@@ -23,8 +23,11 @@ def parse_csv(fileName):
             wifiTime = myList[-3]
             wifiLongitude = myList[-2]
             wifiLatitude = myList[-1][:-2]
-            if (wifiLongitude != '' and wifiLatitude != '' and wifiName in names_list):
-                data = [wifiName, wifiSignal, wifiTime, wifiLongitude, wifiLatitude]
+            if (wifiLongitude != '' and wifiLatitude != ''):
+                if (wifiName in names_list):
+                    data = [wifiName, wifiSignal, wifiTime, wifiLongitude, wifiLatitude]
+                else
+                    data = [wifiName, 0, wifiTime, wifiLongitude, wifiLatitude]
                 datas.append(data)
         line = f.readline()
     f.close()
