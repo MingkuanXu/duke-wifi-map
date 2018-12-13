@@ -26,7 +26,7 @@ def parse_csv(fileName):
             if (wifiLongitude != '' and wifiLatitude != ''):
                 if (wifiName in names_list):
                     data = [wifiName, wifiSignal, wifiTime, wifiLongitude, wifiLatitude]
-                else
+                else:
                     data = [wifiName, 0, wifiTime, wifiLongitude, wifiLatitude]
                 datas.append(data)
         line = f.readline()
