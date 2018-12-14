@@ -231,7 +231,7 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
+          zoom: 16,
           center: {lat: 36.0018, lng: -78.938},
           mapTypeId: 'roadmap'
         });
@@ -325,7 +325,7 @@
           list.push({
             location: new google.maps.LatLng(x[i].getElementsByTagName("latitude")[0].textContent,
                                              x[i].getElementsByTagName("longitude")[0].textContent),
-            weight: parseFloat(x[i].getElementsByTagName("signal")[0].textContent)/15
+            weight: parseFloat(x[i].getElementsByTagName("signal")[0].textContent)/12.5
           });
         }
 

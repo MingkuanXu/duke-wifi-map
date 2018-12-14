@@ -8,12 +8,17 @@ import numpy
 
 data_path = "webpage/src/data.xml"
 neighbors_trial = list(range(1, 101))
-lat_start = 35.995410
-lat_end = 36.007632
+#lat_start = 35.995410
+lat_start = 35.989096
+#lat_end = 36.007632
+lat_end = 36.011524
 lon_start = -78.948664
-lon_end = -78.929848
-lat_step = 0.00005
-lon_step = 0.00005
+#lon_end = -78.929848
+lon_end = -78.919659
+#lat_step = 0.00005
+lat_step = 0.0001
+#lon_step = 0.00005
+lon_step = 0.0001
 max_delta = 0.0025  # only consider neighbors
 output_path = "webpage/src/predictions.xml"
 
@@ -135,8 +140,9 @@ def output():
     doc.appendChild(grid)
 
     for i in range(len(coords)):
-        if (preds[i] == -1):
+        if (preds[i] == -1 or preds[i] == 0):
             continue
+
         location = doc.createElement("location")
         grid.appendChild(location)
 
