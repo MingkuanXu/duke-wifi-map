@@ -39,8 +39,10 @@ def write_into_xml(path, fileName):
     hotspots = doc.createElement("hotspots")
     doc.appendChild(hotspots)
 
+    count = 0;
     for file in os.listdir(path):
         datas = parse_csv(path + "/" + file)
+        count += len(datas)
         for data in datas:
             location = doc.createElement("location")
             hotspots.appendChild(location)
@@ -68,6 +70,7 @@ def write_into_xml(path, fileName):
     f = open(fileName, "w")
     f.write(doc.toprettyxml(indent="  "))
     f.close()
+    print(count)
 
 if __name__ == '__main__':
     write_into_xml("data/csv","webpage/src/data.xml")
